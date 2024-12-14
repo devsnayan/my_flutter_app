@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/Pages/RowContainerWidget.dart';
+
+import 'Pages/ContainerWidget.dart';
+import 'Pages/Counter.dart';
+import 'Pages/ProfileView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +33,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dubai Farm"),
+        title: const Text("MyApp"),
         backgroundColor: const Color.fromARGB(255, 4, 30, 80),
         foregroundColor: Colors.white,
         titleSpacing: 0,
@@ -171,9 +176,18 @@ class Home extends StatelessWidget {
         },
 
       ),
-      body: const Center(
-        child: Text("Hi! Mohammad Nayan"),
-      ),
+      // body:
+      // ListView(
+      //   children: [
+      //     ProfileView(
+      //       titleText: "Mohammad Nayan",
+      //       subTitleText: "Hi",
+      //       trialText: "6:00pm"
+      //     ),
+      //
+      //   ],
+      // ),
+      body: CustomCounter(),
     );
   }
 }
