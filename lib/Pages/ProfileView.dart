@@ -5,12 +5,11 @@ class ProfileView extends StatelessWidget {
 
   final titleText;
   final subTitleText;
-  final trialText;
 
+  
   const ProfileView({super.key,
     required this.titleText,
     required this.subTitleText,
-    required this.trialText,
   });
 
   @override

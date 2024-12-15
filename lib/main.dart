@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/Pages/RowContainerWidget.dart';
+import 'package:my_flutter_app/Pages/ToDoApp.dart';
 
 import 'Pages/ContainerWidget.dart';
 import 'Pages/Counter.dart';
@@ -182,12 +183,13 @@ class Home extends StatelessWidget {
       //     ProfileView(
       //       titleText: "Mohammad Nayan",
       //       subTitleText: "Hi",
-      //       trialText: "6:00pm"
       //     ),
       //
       //   ],
       // ),
-      body: CustomCounter(),
+
+      body: TodoApp()
+
     );
   }
 }
